@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Theater Renter Dashboard | Movie Ticket Management System</title>
+    <link rel="stylesheet" href="css/renter.css">
+</head>
+<body>
+    <header class="topbar">
+        <a class="logo" href="index.html">MTMS</a>
+        <nav><a href="index.html">Home</a><a href="renter.html">Dashboard</a><a href="login.html" id="logoutLink">Logout</a></nav>
+    </header>
+    <main class="dashboard">
+        <div class="dashboard-heading"><div><p class="tag">MOVIE TICKET MANAGEMENT SYSTEM</p><h1>Welcome, Theater Renter</h1></div><span class="role-label">Theater Renter Dashboard</span></div>
+        
+        <section class="panel">
+            <h2>Submit and Manage Movies</h2>
+            <form id="renterMovieForm" class="form-grid">
+                <input id="renterMovieTitle" placeholder="Movie title">
+                <input id="renterMovieGenre" placeholder="Genre">
+                <input id="renterMovieDuration" type="number" min="1" placeholder="Duration in minutes">
+                <button class="button" type="submit">Submit Movie</button>
+            </form>
+            <input class="search" id="renterMovieSearch" placeholder="Search my movies">
+            <div class="table-wrap"><table><thead><tr><th>Movie</th><th>Genre</th><th>Duration</th><th>Status</th><th>Action</th></tr></thead><tbody id="renterMovieTable"></tbody></table></div>
+        </section>
+        <section class="panel">
+            <h2>Theater Rental Applications</h2>
+            <form id="rentalForm" class="form-grid">
+                <input id="rentalMovie" placeholder="Movie title">
+                <input id="rentalTheater" placeholder="Theater name">
+                <input id="rentalDate" type="date">
+                <input id="rentalTime" type="time">
+                <button class="button" type="submit">Submit Application</button>
+            </form>
+            <input class="search" id="rentalSearch" placeholder="Search applications">
+            <div class="table-wrap"><table><thead><tr><th>Movie</th><th>Theater</th><th>Date</th><th>Time</th><th>Status</th><th>Action</th></tr></thead><tbody id="rentalTable"></tbody></table></div>
+        </section>
+        <section class="panel">
+            <h2>Screening Performance</h2>
+            <p>Track the performance of your approved screenings.</p>
+            <div class="summary-grid"><div><strong id="renterScreenings">0</strong><span>Applications</span></div><div><strong>৳0</strong><span>Estimated revenue</span></div></div>
+        </section>
+
+    </main>
+    <script src="js/renter.js"></script>
+</body>
+</html>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up | Movie Ticket Management System</title>
+    <link rel="stylesheet" href="css/register.css">
+</head>
+<body>
+    <header class="topbar">
+        <a class="logo" href="index.html">MTMS</a>
+        <nav><a href="index.html">Home</a><a href="login.html">Login</a></nav>
+    </header>
+
+    <main class="form-page">
+        <form class="form-card" id="registerForm">
+            <p class="tag">JOIN THE SYSTEM</p>
+            <h1>Create Account</h1>
+            <label for="name">Full Name</label>
+            <input type="text" id="name" placeholder="Enter your name">
+            <label for="regEmail">Email</label>
+            <input type="email" id="regEmail" placeholder="Enter your email">
+            <label for="regPassword">Password</label>
+            <input type="password" id="regPassword" placeholder="At least 6 characters">
+            <label for="regRole">Account Type</label>
+            <select id="regRole">
+                <option value="">Select account type</option>
+                <option value="buyer">Ticket Buyer</option>
+                <option value="employee">Employee</option>
+                <option value="renter">Theater Renter</option>
+            </select>
+            <p class="error" id="registerError"></p>
+            <p class="success" id="registerSuccess"></p>
+            <button class="button full-button" type="submit">Create Account</button>
+            <p class="form-bottom">Already registered? <a href="login.html">Login</a></p>
+        </form>
+    </main>
+    <script src="js/register.js"></script>
+</body>
+</html>
